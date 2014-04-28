@@ -66,4 +66,4 @@ INSERT INTO EMPLOYEE VALUES(17,'Gloria','Salvador','gsalvador@yahoo.com','ACE','
 INSERT INTO EMPLOYEE VALUES(18,'Estella','Diaz','ediaz@company.com','ACE','Case Manager')
 INSERT INTO EMPLOYEE VALUES(19,'Patricia','Robledo','probledo@company.com','Administration','Payroll/Account Clerk')
 INSERT INTO EMPLOYEE VALUES(20,'Wendy','Ramirez','wramirez@company.com','Administration','Office Manager')
-INSERT INTO EMPLOYEE VALUES(21,'Dummy','Entry','dummyentry@dummy.com','0.4457387851344299','0.7111445643875902')
+INSERT INTO EMPLOYEE VALUES(21,'Dummy','Entry','dummyentry@dummy.com','0.13171115961573376','0.6334332242226666')
