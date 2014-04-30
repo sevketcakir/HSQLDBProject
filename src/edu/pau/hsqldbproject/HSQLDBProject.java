@@ -17,7 +17,7 @@ public class HSQLDBProject {
 
         try {
             /*
-             * Connect and use DBHandler class methods
+             * Connect and use DBHandler class methods. DBHandler is a wrapper class for JDBC classes
              * Print all data in the table
              */
             String sql = "SELECT * FROM Employee";
@@ -32,11 +32,11 @@ public class HSQLDBProject {
             System.out.printf("%d row(s) affected\n", rowCount);
 
             /*
-             * Use Connection, Statement, ResultSet classes
+             * Use Connection, Statement, ResultSet classes(alternative, jdbc way)
              * Write names of employees
              */
             connection = DriverManager.getConnection("jdbc:hsqldb:file:db/employeedb");//Connect to database
-            Statement stmt = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+            Statement stmt = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);//Create statement to obtain scrollable ResultSet
             ResultSet rs = stmt.executeQuery("SELECT * FROM Employee");//Make the query
             while (rs.next()) {//Print names in normal order
                 System.out.println(rs.getObject("FirstName"));

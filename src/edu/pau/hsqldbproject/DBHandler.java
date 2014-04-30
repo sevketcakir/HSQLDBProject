@@ -89,7 +89,7 @@ public class DBHandler {
     }
 
     /**
-     * Prints the Resultsel to standart output
+     * Prints the Resultset to standart output
      */
     public void printResultSet() {
         if (rs != null) {
